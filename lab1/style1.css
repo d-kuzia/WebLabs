@@ -1,0 +1,87 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "a a b"
+    "c d b"
+    "c e b"
+    "f f f";
+    grid-template-rows: 0.45fr 0.1fr 1.75fr 0.45fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 100vh;
+    margin: 0;
+    font-size: 20px;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.a {
+    grid-area: a;
+    background-color: #C6D9F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    width: 175px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.text {
+    border: 0px;
+}
+
+.b {
+    grid-area: b;
+    background-color: #EAF1DD;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+}
+
+.c {
+    grid-area: c;
+    background-color: #FDE9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.d {
+    grid-area: d;
+    background-color: #FDE9D9;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+}
+
+.e {
+    grid-area: e;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.f {
+    grid-area: f;
+    background-color: #C6D9F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
