@@ -13,7 +13,8 @@ body {
 }
 
 div {
-    border: 5px solid white;
+    margin: 3px;
+    padding: 5px;
 }
 
 img {
@@ -30,15 +31,22 @@ img {
 }
 
 .box {
-    width: 175px;
-    height: 30px;
+    width: 15vw;
+    max-width: 150px;
+    height: 30%;
+    max-height: 30px;
     background-color: white;
     border: 2px solid black;
     display: flex;
     justify-content: right;
     align-items: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: clamp(1px, 1.9vw, 18px);
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 1.3em;
 }
 
 .text {
@@ -52,6 +60,7 @@ img {
     justify-content: right;
     align-items: center;
     padding: 20px;
+    overflow: auto;
 }
 
 .c {
@@ -61,6 +70,15 @@ img {
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+.c ul {
+    list-style: none;
+    padding: 0;
+}
+
+.c ul li {
+    margin: 7px;
 }
 
 .d {
@@ -75,11 +93,15 @@ img {
 .e {
     grid-area: e;
     background-color: #FFFFFF;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     padding: 20px;
     overflow: auto;
+}
+
+.e p {
+    width: 100%;
 }
 
 .f {
@@ -91,28 +113,15 @@ img {
     padding: 20px;
 }
 
-button {
+.nav-link {
+    display: inline-block;
     color: black;
     text-decoration: none;
     font-size: 25px;
-    border: none;
-    background: none;
     font-weight: 600;
+    transition: transform 0.1s ease;
 }
 
-button::before {
-    margin-left: auto;
-}
-
-button::after, button::before {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #C6D9F1;
-    display: block;
-    transition: 0.5s;
-}
-
-button:hover::after, button:hover::before {
-    width: 100%;
+.nav-link:hover {
+    transform: scale(1.1);
 }
