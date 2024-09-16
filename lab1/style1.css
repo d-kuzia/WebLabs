@@ -5,7 +5,7 @@ body {
         "c d b"
         "c e b"
         "f f f";
-    grid-template-rows: minmax(50px, auto) 50px minmax(300px, auto) minmax(50px, auto);
+    grid-template-rows: 100px 50px minmax(300px, auto) 100px;
     grid-template-columns: 1.3fr 3fr 1.3fr;
     height: 100vh;
     margin: 0;
@@ -59,8 +59,15 @@ img {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 20px;
+    flex-direction: column;
+    padding: 5px;
     overflow: auto;
+}
+
+.b img {
+    max-width: 95%;
+    height: auto;
+    margin-bottom: 5px;
 }
 
 .c {
@@ -94,15 +101,18 @@ img {
 .e {
     grid-area: e;
     background-color: #FFFFFF;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 20px;
     overflow: auto;
 }
 
 .e p {
-    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .f {
