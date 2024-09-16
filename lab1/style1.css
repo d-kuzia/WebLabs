@@ -75,10 +75,11 @@ img {
 .c ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .c ul li {
-    margin: 7px;
+    margin: 15px;
 }
 
 .d {
