@@ -6,10 +6,24 @@ body {
         "c e b"
         "f f f";
     grid-template-rows: 100px 50px minmax(300px, auto) 100px;
-    grid-template-columns: 1.3fr 3fr 1.3fr;
+    grid-template-columns: 1.3fr minmax(300px, 3fr) 1.3fr;
     height: 100vh;
     margin: 0;
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "a"
+            "c"
+            "d"
+            "e"
+            "b"
+            "f";
+        grid-template-rows: 70px auto 50px 600px 850px 70px;
+        grid-template-columns: 1fr;
+    }
 }
 
 div {
@@ -95,7 +109,7 @@ img {
     text-decoration: none;
     font-size: 25px;
     font-weight: 600;
-    transition: transform 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .nav-link:hover {
@@ -119,6 +133,7 @@ img {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    border: 2px solid black;
     overflow: auto;
 }
 
@@ -137,6 +152,11 @@ img {
     list-style-position: inside;
     padding: 0;
     text-align: center;
+}
+
+.e img {
+    width: 454px;
+    height: 200px;
 }
 
 .f {
