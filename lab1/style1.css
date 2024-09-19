@@ -21,7 +21,7 @@ body {
             "e"
             "b"
             "f";
-        grid-template-rows: 70px auto 50px 600px 850px 70px;
+        grid-template-rows: 70px auto 50px 600px 650px 70px;
         grid-template-columns: 1fr;
     }
 }
