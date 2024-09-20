@@ -5,25 +5,11 @@ body {
         "c d b"
         "c e b"
         "f f f";
-    grid-template-rows: 100px 50px minmax(300px, auto) 100px;
-    grid-template-columns: 1.3fr minmax(300px, 3fr) 1.3fr;
+    grid-template-rows: 100px 50px minmax(450px, auto) 100px;
+    grid-template-columns: minmax(150px, 1.3fr) minmax(460px, 3fr) minmax(150px, 1.3fr);
     height: 100vh;
     margin: 0;
     font-size: 20px;
-}
-
-@media (max-width: 768px) {
-    body {
-        grid-template-areas:
-            "a"
-            "c"
-            "d"
-            "e"
-            "b"
-            "f";
-        grid-template-rows: 70px auto 50px 600px 650px 70px;
-        grid-template-columns: 1fr;
-    }
 }
 
 div {
@@ -65,6 +51,7 @@ img {
 
 .text {
     border: 0px;
+    text-align: right;
 }
 
 .b {
@@ -76,6 +63,7 @@ img {
     flex-direction: column;
     padding: 5px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .b img {
@@ -166,4 +154,18 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "a"
+            "c"
+            "d"
+            "e"
+            "b"
+            "f";
+        grid-template-rows: 70px auto 50px 600px 650px 70px;
+        grid-template-columns: 1fr;
+    }
 }
