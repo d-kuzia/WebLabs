@@ -5,48 +5,44 @@ body {
         "c d b"
         "c e b"
         "f f f";
-    grid-template-rows: 100px 50px minmax(450px, auto) 100px;
-    grid-template-columns: minmax(150px, 1.3fr) minmax(460px, 3fr) minmax(150px, 1.3fr);
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-columns: minmax(150px, 1.3fr) minmax(470px, 3fr) minmax(150px, 1.3fr);
     height: 100vh;
     margin: 0;
+    gap: 5px;
     font-size: 20px;
 }
 
-div {
-    margin: 3px;
-    padding: 5px;
-}
-
-img {
-    width: 100%;
+.a, .b, .c, .d, .e, .f, .box {
+    display: flex;
+    align-items: center;
 }
 
 .a {
     grid-area: a;
+}
+
+.f {
+    grid-area: f;
+}
+
+.a, .f {
     background-color: #C6D9F1;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
 }
 
 .box {
     width: 15vw;
-    max-width: 150px;
+    max-width: 130px;
     height: 30%;
     max-height: 30px;
     background-color: white;
     border: 2px solid black;
-    display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    font-size: clamp(1px, 1.9vw, 18px);
-}
-
-.box h2 {
-    margin: 0;
-    font-size: 1.3em;
+    font-size: clamp(1px, 1.5vw, 14px);
 }
 
 .text {
@@ -57,11 +53,8 @@ img {
 .b {
     grid-area: b;
     background-color: #EAF1DD;
-    display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 5px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -75,10 +68,7 @@ img {
 .c {
     grid-area: c;
     background-color: #FDE9D9;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
 
 .c ul {
@@ -107,27 +97,23 @@ img {
 .d {
     grid-area: d;
     background-color: #FDE9D9;
-    display: flex;
     justify-content: left;
-    align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .e {
     grid-area: e;
     background-color: #FFFFFF;
-    display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 20px;
     border: 2px solid black;
-    overflow: auto;
+
 }
 
 .e p {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -147,15 +133,6 @@ img {
     height: 200px;
 }
 
-.f {
-    grid-area: f;
-    background-color: #C6D9F1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
 @media (max-width: 768px) {
     body {
         grid-template-areas:
@@ -165,7 +142,7 @@ img {
             "e"
             "b"
             "f";
-        grid-template-rows: 70px auto 50px 600px 650px 70px;
+        grid-template-rows: 70px auto 50px auto 650px 70px;
         grid-template-columns: 1fr;
     }
 }
