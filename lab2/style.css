@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+header h1 {
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.card {
+    width: 99%;
+    height: 70vh;
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+}
+
+.card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 1px;
+    transition: all .5s;
+    background: white;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.card p:hover {
+    flex: 2;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
