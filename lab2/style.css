@@ -14,7 +14,8 @@ body {
 
 .upper {
     display: flex;
-    height: 85%;
+    height: 85vh;
+    overflow: auto;
 }
 
 .footer {
@@ -22,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 15%;
+    height: 15vh;
     min-height: 80px;
     background-color: #C6D9F1;
 }
@@ -30,13 +31,26 @@ body {
 .left {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 80vw;
 }
 
 .right-side {
     display: flex;
-    width: 20%;
+    width: 20vw;
+    min-height: 320px;
     background-color: #EAF1DD;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 5px;
+}
+
+.right-side img {
+    width: 90%;
+    height: auto;
+    margin: 5px;
 }
 
 .header {
@@ -44,7 +58,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 15%;
+    height: 15vh;
     min-height: 80px;
     background-color: #C6D9F1;
 }
@@ -53,8 +67,7 @@ body {
     display: flex;
     width: 15vw;
     max-width: 130px;
-    height: 65%;
-    max-height: 90px;
+    height: auto;
     background-color: white;
     border: 2px solid black;
     justify-content: right;
@@ -70,15 +83,16 @@ body {
 
 .main {
     display: flex;
-    height: 85%;
+    height: 85vh;
 }
 
 .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 20vw;
     min-width: 135px;
+    min-height: 240px;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #FDE9D9;
@@ -110,7 +124,7 @@ body {
 .mid-4-5 {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 60vw;
 }
 
 .title {
@@ -125,5 +139,28 @@ body {
 .content {
     display: flex;
     height: 90%;
+    min-height: 200px;
     background-color: #FFFFFF;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid black;
+    overflow: auto;
+}
+
+.content p {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.content ol {
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
 }
