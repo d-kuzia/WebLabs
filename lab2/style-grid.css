@@ -6,7 +6,7 @@ body {
         "c e b"
         "f f f";
     grid-template-rows: 100px 50px auto 100px;
-    grid-template-columns: minmax(150px, 1.3fr) minmax(470px, 3fr) minmax(150px, 1.3fr);
+    grid-template-columns: minmax(150px, 1.3fr) minmax(250px, 3fr) minmax(150px, 1.3fr);
     height: 100vh;
     margin: 0;
     gap: 5px;
