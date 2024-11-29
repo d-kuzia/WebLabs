@@ -65,6 +65,11 @@ body {
     margin: 5px;
 }
 
+.pics-right-side h2 {
+    padding: 15px;
+    text-align: center;
+}
+
 .nav-menu-left-side {
     grid-area: nav-menu-left-side;
     background-color: #FDE9D9;
@@ -97,7 +102,6 @@ body {
 .title {
     grid-area: title;
     background-color: #FDE9D9;
-    justify-content: left;
     padding: 20px;
 }
 
@@ -131,6 +135,79 @@ body {
     width: 454px;
     height: 200px;
 }
+
+.custom-form, .css-form {
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 400px;
+    margin: 15px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.css-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.custom-form input, .css-form input {
+    width: 80%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.custom-form button, .css-form button, .remove-css-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.custom-form button {
+    grid-column: span 2;
+}
+
+.custom-form button:hover, .css-form button:hover {
+    background-color: #333333;
+}
+
+.remove-css-button {
+    background-color: #333333;
+    margin: 8px 0;
+}
+
+.remove-css-button:hover {
+    background-color: #666666;
+}
+
+
+.custom-form label, .css-form label {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 3px;
+    text-align: center;
+    width: 100%;
+}
+
 
 @media (max-width: 768px) {
     body {
