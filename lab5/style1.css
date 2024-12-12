@@ -137,7 +137,7 @@ body {
 }
 
 .custom-form, .css-form {
-    background-color: #FFFFFF;
+    background-color: #FDE9D9;
     border: 2px solid black;
     border-radius: 8px;
     padding: 15px;
@@ -187,7 +187,7 @@ body {
 }
 
 .custom-form button:hover, .css-form button:hover {
-    background-color: #333333;
+    background-color: #C6D9F1;
 }
 
 .remove-css-button {
@@ -196,7 +196,7 @@ body {
 }
 
 .remove-css-button:hover {
-    background-color: #666666;
+    background-color: #C6D9F1;
 }
 
 
