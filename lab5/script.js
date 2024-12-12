@@ -16,8 +16,8 @@ function calculateRectangleArea(width, height) {
 
 // Function to display rectangle area in main-content
 function displayRectangleArea() {
-  const width = 1012; // Example width
-  const height = 2; // Example height
+  const width = 1012;
+  const height = 2;
   const area = calculateRectangleArea(width, height);
   const mainContent = document.querySelector('.main-content');
   const areaElement = document.createElement('p');
